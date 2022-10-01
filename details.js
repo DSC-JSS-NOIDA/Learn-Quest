@@ -11,30 +11,8 @@ const projectsResourceBox = document.getElementById('projectsResourceBox')
 let beginnerData;
 let intermediateData;
 let advancedData;
-const fetchResources = async () => {
-    try {
-        // Beginner
-        const beginner = await fetch(`./data/domains/${domain}/${subDomain}/beginner.json`)
-        beginnerData = await beginner.json();
-        // Intermediate
-        const intermediate = await fetch(`./data/domains/${domain}/${subDomain}/intermediate.json`)
-        intermediateData = await intermediate.json();
-        // Advanced
-        const advanced = await fetch(`./data/domains/${domain}/${subDomain}/advanced.json`)
-        advancedData = await advanced.json();
-    }
-    catch (e) {
-        throw new Error(e);
-    }
-}
 
-
-fetchResources()
-
-
-const addResources = () => {
-    /* beginner data */
-    // later we can have loader
+const addBeginnerResources = () => {
     if (beginnerData != "") {
         for (let i = 0; i < beginnerData.length; i++) {
             if (beginnerData[i].type == "docs") {
@@ -77,8 +55,9 @@ const addResources = () => {
             alt="..."
           />`;
     }
-    /* Intermediate Resource Box */
+}
 
+const addIntermediateResources = () => {
     if (intermediateData != '') {
         for (let i = 0; i < intermediateData.length; i++) {
             if (intermediateData[i].type == 'docs') {
@@ -120,7 +99,9 @@ const addResources = () => {
             alt="..."
           />`;
     }
-    /* Advanced Resource Box */
+}
+
+const addAdvancedResources = () => {
     if (advancedData != '') {
         for (let i = 0; i < advancedData.length; i++) {
             if (advancedData[i].type == 'docs') {
@@ -164,9 +145,27 @@ const addResources = () => {
     }
 }
 
+const fetchResources = async () => {
+    try {
+        // Beginner
+        const beginner = await fetch(`./data/domains/${domain}/${subDomain}/beginner.json`)
+        beginnerData = await beginner.json();
+        await addBeginnerResources();
+        // Intermediate
+        const intermediate = await fetch(`./data/domains/${domain}/${subDomain}/intermediate.json`)
+        intermediateData = await intermediate.json();
+        await addIntermediateResources();
+        // Advanced
+        const advanced = await fetch(`./data/domains/${domain}/${subDomain}/advanced.json`)
+        advancedData = await advanced.json();
+        await addAdvancedResources();
+    }
+    catch (e) {
+        throw new Error(e);
+    }
+}
 
-setTimeout(() => {
-    addResources();
-}, 300)
+
+fetchResources()
 
 

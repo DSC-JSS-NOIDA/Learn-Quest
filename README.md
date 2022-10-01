@@ -79,7 +79,7 @@ A collection of resources categorised by tech domains, languages, expertise and 
 
 ### Demo <a href="https://drive.google.com/file/d/1Z6bihDrFMUPy8j5nIqzwnqP4pl_OgPXc/view" style="text-decoration:none;">🎥</a>
 
-#### Website for this repository : <https://dsc-jss-noida.github.io/Learn-Quest/>
+#### Website for this repository : <https://learn-quest.netlify.app/>
 
 <br>
 

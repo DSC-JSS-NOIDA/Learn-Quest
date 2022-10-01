@@ -49,16 +49,19 @@ a {
 a:hover {
   color: inherit;
 }
+
 /* Navbar Section */
 #quickLearnLogoImg {
   width: 100%;
 }
+
 .nav {
   /* position: sticky; */
   top: 0%;
   /* z-index: 10; */
   /* background-color: #f1f1f2; */
 }
+
 #navResourceBtn {
   box-sizing: border-box;
   padding-left: 1%;
@@ -71,11 +74,13 @@ a:hover {
   color: white;
   transition: 0.1s linear all;
 }
+
 #navResourceBtn:hover {
   border: 2px solid var(--primary-title);
   color: var(--primary-title);
   background-color: white;
 }
+
 /* About Us Section */
 #mainHeading {
   font-family: "Poppins", serif;
@@ -83,9 +88,11 @@ a:hover {
   font-size: 3rem;
   color: var(--primary-title);
 }
+
 #mainParagraph {
   font-size: 20px;
 }
+
 /* #infoImg1 {
   width: 100%;
   height: auto;
@@ -100,35 +107,41 @@ a:hover {
   transition: 0.1s linear all;
   width: 50%;
 }
+
 #exploreBtn:hover {
   border: 3px solid var(--primary-title);
   color: var(--primary-title);
   background-color: white;
 }
-#aboutUs{
-  height:90vh;
+
+#aboutUs {
+  height: 90vh;
   position: relative;
   width: 100vw;
 
 }
-#imgcontainer{
+
+#imgcontainer {
   position: absolute;
-  bottom:0;
-  right:0;
+  bottom: 0;
+  right: 0;
 }
+
 /* Dsc Corner */
 #infoImg2 {
-  width: 60%;
+  width: 75%;
   margin-left: 0%;
 }
-#zigzag{
-  position:absolute;
+
+#zigzag {
+  position: absolute;
   /* height:50%;
   width:50%; */
-  right:0;
-  bottom:0;
+  right: 0;
+  bottom: 0;
   z-index: -2;
 }
+
 #contributionBtn {
   background-color: var(--primary-title);
   border: 3px solid var(--primary-title);
@@ -137,11 +150,13 @@ a:hover {
   transition: 0.1s linear all;
   width: 70%;
 }
+
 #contributionBtn:hover {
   border: 3px solid var(--primary-title);
   color: var(--primary-title);
   background-color: white;
 }
+
 /* Feature Section */
 #featureHeading {
   margin-top: 20px;
@@ -151,6 +166,7 @@ a:hover {
   font-weight: bolder;
   text-align: center;
 }
+
 .card {
   transition: all 0.2s ease-in;
   padding: 1.1rem;
@@ -158,25 +174,30 @@ a:hover {
   border-radius: 1.25rem;
   box-shadow: 5px 5px 10px #095557;
 }
+
 /* css for image inside card */
 .card-img-top {
   margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 1.25rem;
 }
+
 /* card hover effect */
 .card:hover {
   transform: scale(1.05);
   box-shadow: 5px 5px 15px #083840;
 }
+
 /* hover effect for image when card is hover */
 .card:hover .card-img-top {
   border: 2px solid #083840;
   border-radius: 0.8rem;
 }
+
 .card-body {
   min-height: 145px;
 }
+
 .text-center {
   display: flex;
   flex-direction: column;
@@ -210,6 +231,7 @@ a:hover {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 #resourceReferenceBox {
   display: flex;
   flex-direction: column;
@@ -236,6 +258,7 @@ a:hover {
   transition-timing-function: ease-in;
   transition: 0.5s ease-in-out;
 }
+
 #resourceReferenceHeading {
   font-size: 5rem;
   line-height: 5.5rem;
@@ -287,6 +310,7 @@ a:hover {
   color: white;
   background: var(--primary-title);
 }
+
 .btn-style {
   border: none;
   background: none;
@@ -298,27 +322,32 @@ a:hover {
   color: var(--primary-label);
   padding: 8px;
 }
+
 #resourceSection {
   /* z-index: 5; */
   /* background: var(--primary-background); */
   /* width: fit-content; */
-  width:100%;
+  width: 100%;
   border-radius: 15px;
   /* box-shadow: 1px 1px 30px var(--primmary-shadow); */
 }
+
 #categoryText {
   font-weight: 600;
   font-size: 1.5rem;
   text-align: center;
 }
+
 #resourceContainer {
   display: flex;
   padding: 1rem;
 }
+
 /* Initially for Contribution Guidlines */
 #resourceBox {
   display: none;
 }
+
 .resource-heading {
   font-size: 2.2rem;
   font-weight: 800;
@@ -331,9 +360,11 @@ a:hover {
 .category .btn-style {
   transition: all 0.2s;
 }
+
 .category .btn-style:hover {
   background: #dacff6;
 }
+
 .select-category-btn {
   display: block;
   width: 100%;
@@ -344,20 +375,24 @@ a:hover {
   font-size: 1.2rem;
   /* font-family: monospace; */
 }
+
 .select-category-btn:hover {
   background-color: var(--primary-contact-background);
 }
+
 .view-more-btn {
   width: 100%;
   background-color: var(--primary-title);
   color: white;
   transition: 0.03s linear all;
 }
+
 .view-more-btn:hover {
   background-color: white;
   color: var(--primary-title);
   border: 2px solid var(--primary-title);
 }
+
 /*Contact*/
 /* #contactHeading {
   color: var(--primary-title);
@@ -387,6 +422,7 @@ textarea.contact-input-tags {
   border: 2px solid var(--primary-title);
   color: var(--primary-title);
 }
+
 */ #my-form {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
@@ -423,8 +459,8 @@ textarea.contact-input-tags {
 }
 
 
-#logo{
-  font-family:cursive;
+#logo {
+  font-family: cursive;
   font-size: 25px;
   font-weight: bold;
   margin-left: 10px;
@@ -444,28 +480,34 @@ footer {
   padding-bottom: 5px;
   align-items: center;
 }
+
 .fc {
   width: fit-content;
   /* box-shadow: 2px 2px 30px rgb(226, 223, 223); */
 }
+
 .font {
   font-weight: 600;
 }
+
 .contributionHead {
   color: var(--primary-title);
   font-size: 1.2rem;
 }
+
 /* Footer CSS */
 #footer {
   background-color: rgb(255 5 5 / 29%);
   padding: 20px;
 }
+
 /* Responsiveness */
 @media screen and (max-width: 768px) {
   header {
     height: auto;
     margin-bottom: 20px;
   }
+
   #mainHeading {
     font-size: 1.8rem;
     text-align: center;
@@ -475,15 +517,17 @@ footer {
   #hackfest .row {
     flex-direction: column;
   }
+
   #infoImg1,
   #infoImg2 {
     margin-left: 0;
     /* width: 65%; */
     display: block;
-    height:10rem;
+    height: 10rem;
     margin: auto;
   }
-  #infoImg1{
+
+  #infoImg1 {
     position: absolute;
     right: 2rem;
   }
@@ -494,6 +538,7 @@ footer {
     background-size: 829px;
     height: fit-content;
   }
+
   #resourceReferenceHeading {
     font-size: 4rem;
   }
@@ -521,8 +566,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-    font-family: monospace;
+  font-family: monospace;
 }
+
 .copy-btn {
   height: 40px;
   cursor: pointer;
@@ -541,11 +587,13 @@ footer {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 .copy-btn:hover {
   color: #fff;
   background-color: #0b5ed7;
   border-color: #0a58ca;
 }
+
 /* Code Snippet CSS Over */
 
 .mybutton {
@@ -649,6 +697,7 @@ footer {
 .dark-text {
   color: white;
 }
+
 .dark-hr {
   background-color: #6940d3;
 }
@@ -671,6 +720,7 @@ footer {
   text-align: left;
   margin-bottom: 7px;
 }
+
 .list-group-item p {
   text-align: left;
   padding-left: 40px;

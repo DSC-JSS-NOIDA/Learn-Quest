@@ -88,13 +88,28 @@ a:hover {
 /* About Us Section */
 #mainHeading {
   font-family: "Poppins", serif;
-  font-weight: bolder;
+  font-weight:900;
+  margin-left: 1rem;
   font-size: 3rem;
   color: var(--primary-title);
+  font-size: 60px;
 }
+#mainHeading2{
+  font-family: "Poppins", serif;
+  font-weight:950;
+  margin-left: 1.9rem;
+  font-size: 3rem;
+  color: var(--primary-title);
+  font-size: 50px;
+}
+
+
 
 #mainParagraph {
   font-size: 20px;
+  color: #2C97A9;
+  text-align: left;
+  margin-left: 3.8em;
 }
 
 /* #infoImg1 {
@@ -111,6 +126,7 @@ a:hover {
   transition: 0.2s linear all;
   width: 50%;
   box-shadow: 2.2px 5px 6px rgb(149, 134, 134);
+  margin-left: 1em;
 }
 
 #exploreBtn:hover {
@@ -155,6 +171,7 @@ a:hover {
   transition: 0.1s linear all;
   width: 70%;
   box-shadow: 2.2px 5px 6px rgb(149, 134, 134);
+  margin-left:-0.6em;
 }
 
 #contributionBtn:hover {

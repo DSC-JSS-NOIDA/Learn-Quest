@@ -176,7 +176,7 @@ a:hover {
 
 /* Feature Section */
 #featureHeading {
-  margin-top: 20px;
+  margin: 28px 0px;
   color: var(--primary-title);
   font-size: 3.5rem;
   font-family: "Poppins", sans-serif;
@@ -203,7 +203,7 @@ a:hover {
 /* card hover effect */
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 5px 5px 15px #083840;
+  box-shadow: 5px 5px 15px #888888;
 }
 
 /* hover effect for image when card is hover */

@@ -1,3 +1,4 @@
+
 :root {
   --primary-background: #fff;
   --primary-border-card: rgba(0, 0, 0, 0.125);
@@ -103,6 +104,8 @@ a:hover {
 
 #mainParagraph {
   font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 /* #infoImg1 {

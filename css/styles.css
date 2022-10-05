@@ -623,11 +623,11 @@ footer {
   font-family: "Poppins", sans-serif;
   position: relative;
   padding: 17px 25px;
-  border: 2px solid white;
+  border: 2px solid cadetblue;
   margin: 10px;
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: cadetblue;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: 0.5s;
@@ -642,7 +642,7 @@ footer {
 }
 
 .mybutton:hover {
-  color: white;
+  color: black;
 }
 
 .mybutton span {

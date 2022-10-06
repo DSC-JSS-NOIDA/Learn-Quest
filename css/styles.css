@@ -337,9 +337,24 @@ a:hover {
   margin: 0.5rem auto;
   width: 100%;
   box-shadow: 1px 1px 5px var(--primary-title);
-  border-radius: 20px;
+  border-radius: 10px;
   font-family: sans-serif;
   color: var(--primary-label);
+  padding: 8px;
+}
+
+/* Dark Mode Button Customization */
+
+.btn-style-dark{
+  color: white;
+  border: none;
+  background: none;
+  margin: 0.5rem auto;
+  width: 100%;
+  box-shadow: 1px 1px 5px var(--primary-title);
+  border-radius: 10px;
+  font-family: sans-serif;
+  /* color: var(--primary-label); */
   padding: 8px;
 }
 
@@ -382,6 +397,15 @@ a:hover {
 }
 
 .category .btn-style:hover {
+  background: #dacff6;
+}
+
+/* Dark Mode Hover */
+.category .btn-style-dark {
+  transition: all 0.2s;
+}
+
+.category .btn-style-dark:hover {
   background: #dacff6;
 }
 
@@ -801,5 +825,15 @@ footer {
   .feature-image{
     display: none;
   }
+}
+
+
+/* Added For The Icons Of Dark And Light Mode */
+
+.invisible{
+  display: none;
+}
+.visible{
+  display: block;
 }
 

@@ -183,13 +183,22 @@ a:hover {
 	text-align: center;
 }
 
-.card {
+/* .card {
 	transition: all 0.3s ease-in;
 	padding: 1.1rem;
 	background-color: #96a6ce5b;
 	border-radius: 1.25rem;
 	box-shadow: 5px 5px 10px #095557;
 	width: 18rem;
+} */
+.card {
+	transition: all 0.3s ease-in;
+	padding: 1.1rem;
+	width: 10rem;
+	background: transparent;
+	border: none;
+	display: flex;
+	align-items: flex-start;
 }
 
 /* css for image inside card */
@@ -201,7 +210,7 @@ a:hover {
 
 /* card hover effect */
 .card:hover {
-	transform: scale(1.05);
+	transform: scale(1.1);
 	box-shadow: 5px 5px 15px #083840;
 }
 
@@ -226,7 +235,20 @@ a:hover {
 .card-title {
 	justify-content: center;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 0;
+	color: #083840;
+	font-weight: 700;
+	font-size: 23px;
+	line-height: 34px;
+	font-family: "Poppins", sans-serif;
+}
+
+.card-text {
+	color: #2c97a9;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left;
 }
 
 /* Reference Section */
@@ -796,12 +818,6 @@ footer {
 @media screen and (max-width: 1200px) {
 	.card-title h5 {
 		font-size: 1.5rem;
-	}
-}
-
-@media (max-width: 1360px) {
-	.card {
-		width: 15rem;
 	}
 }
 

@@ -1,298 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+		<!-- Custom Stylesheet -->
+		<link rel="stylesheet" href="css/styles.css" />
+		<!--Font Aswesome-->
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/font-awesome.min.css"> -->
+		<!--Bootstrap Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+		<!-- animate css -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!--Font Aswesome-->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/font-awesome.min.css"> -->
-  <!--Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
-  <!-- animate css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!----- FAVICON ------->
 
-  <!----- FAVICON ------->
+		<link
+			rel="shortcut icon"
+			type="image/jpg"
+			href="assets/images/favicon.png"
+		/>
 
-  <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png" />
+		<!--Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
 
-  <!--Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+		<title>LearnQuest</title>
+		<style>
+			.img-sz {
+				width: 10rem;
+				height: auto;
+			}
+		</style>
 
-  <title>LearnQuest</title>
-  <style>
-    .img-sz {
-      width: 10rem;
-      height: auto;
-    }
-  </style>
+		<!--scroll bar-->
 
-  <!--scroll bar-->
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				text-align: center;
+				font-family: calibri;
+			}
 
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      text-align: center;
-      font-family: calibri;
-    }
+			::-webkit-scrollbar {
+				width: 12px;
+			}
 
-    ::-webkit-scrollbar {
-      width: 12px;
-    }
+			::-webkit-scrollbar-thumb {
+				background: #083840;
+				border-radius: 30px;
+			}
+		</style>
 
-    ::-webkit-scrollbar-thumb {
-      background: #083840;
-      border-radius: 30px;
-    }
-  </style>
-
-  <!--scroll bar-->
-  <!-- <script defer src="validate.js"></script>
+		<!--scroll bar-->
+		<!-- <script defer src="validate.js"></script>
  -->
-</head>
+	</head>
 
-<body>
-  <!--Navbar Section -->
-  <nav class="nav p-3 flex-nowrap">
-    
-    <a href="/index.html" id="logo" class="navbar-brand font-weight-bold">
-      LearnQuest
-    </a>
-    <a class="nav-link btn" href="./resource.html" id="navResourceBtn">Resources</a>
-    <span class="btn" onclick="dark_mode()" style="display: block; margin-left: 2px; color: #6940d3;" href="#"><i
-        id="darkSwitch1" class="fas fa-moon"></i></span>
-  </nav>
-  <!-- Header Section -->
-    <div class="" id="aboutUs">
-      <!-- Text Section -->
-      <div class="row">
-        <div class="
-              col-12 col-md-6
-              px-3
-              d-flex
-              flex-column
-              justify-content-md-center
-              home
-              m-5
-            ">
-          <h1 id="mainHeading" class=" animate__animated animate__fadeInLeft h1" style="text-align: left;">
-            Investing in Knowledge and Your Future
-          </h1>
-          <a href="./resource.html" class="btn px-3 py-2 mt-5 animate__animated animate__fadeInLeft" id="exploreBtn">
-            Explore Resources
-          </a>
-        </div>
-      </div>
-      <div class="col-12 col-md-5 animate__animated animate__fadeInRight" id="imgcontainer">
-        <!--Image/Illustration Needed-->
-        <img src="./assets/images/girl.svg" id="infoImg1" alt="img" style="right: 2rem;"/>
-        <img src="./assets/images/weird.png" id="zigzag" alt="zag">
-      </div>
-    </div>
-  <!--Header Section Ends -->
-  <section id="hackfest">
-    <div class="container my-md-5">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <!--Image/Illustration Needed-->
-          <img src="./assets/images/Group 9.svg" id="infoImg2" alt="img" />
-        </div>
-        <div class="
-              col-12 col-md-6
-              p-3
-              d-flex
-              flex-column
-              justify-content-center
-            ">
-          <h1 id="mainHeading">Hackfest @GDSC</h1>
-          <!-- <hr style="border: 2px solid #5cb85c" /> -->
-          <p class="my-3" id="mainParagraph">
-            Greetings! Hope you all are doing good. Want to develop new skills
-            and build the right tech stack but don't know where to learn from?
-            Welcome to our website, we provide the best resources for you to
-            choose, find the one that suits you. Details such as the links to
-            their videos, documentation, pages have been made available for
-            your comfort. It will be super easy for you to know about any
-            resource. Hope you like our services. Cheers.
-          </p>
+	<body>
+		<!--Navbar Section -->
+		<nav class="nav p-3 flex-nowrap">
+			<a
+				href="/index.html"
+				id="logo"
+				class="navbar-brand font-weight-bold"
+			>
+				LearnQuest
+			</a>
+			<a class="nav-link btn" href="./resource.html" id="navResourceBtn"
+				>Resources</a
+			>
+			<span
+				class="btn"
+				onclick="dark_mode()"
+				style="display: block; margin-left: 2px; color: #6940d3"
+				href="#"
+				><i id="darkSwitch1" class="fas fa-moon"></i
+			></span>
+		</nav>
+		<!-- Header Section -->
+		<div class="" id="aboutUs">
+			<!-- Text Section -->
+			<div class="row">
+				<div
+					class="col-12 col-md-6 px-3 d-flex flex-column justify-content-md-center home m-5"
+				>
+					<h1
+						id="mainHeading"
+						class="animate__animated animate__fadeInLeft h1"
+						style="text-align: left"
+					>
+						Investing in Knowledge and Your Future
+					</h1>
+					<a
+						href="./resource.html"
+						class="btn px-3 py-2 mt-5 animate__animated animate__fadeInLeft"
+						id="exploreBtn"
+					>
+						Explore Resources
+					</a>
+				</div>
+			</div>
+			<div
+				class="col-12 col-md-5 animate__animated animate__fadeInRight"
+				id="imgcontainer"
+			>
+				<!--Image/Illustration Needed-->
+				<img
+					src="./assets/images/girl.svg"
+					id="infoImg1"
+					alt="img"
+					style="right: 2rem"
+				/>
+				<img src="./assets/images/weird.png" id="zigzag" alt="zag" />
+			</div>
+		</div>
+		<!--Header Section Ends -->
+		<section id="hackfest">
+			<div class="container my-md-5">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<!--Image/Illustration Needed-->
+						<img
+							src="./assets/images/Group 9.svg"
+							id="infoImg2"
+							alt="img"
+						/>
+					</div>
+					<div
+						class="col-12 col-md-6 p-3 d-flex flex-column justify-content-center"
+					>
+						<h1 id="mainHeading">Hackfest @GDSC</h1>
+						<!-- <hr style="border: 2px solid #5cb85c" /> -->
+						<p class="my-3" id="mainParagraph">
+							Greetings! Hope you all are doing good. Want to
+							develop new skills and build the right tech stack
+							but don't know where to learn from? Welcome to our
+							website, we provide the best resources for you to
+							choose, find the one that suits you. Details such as
+							the links to their videos, documentation, pages have
+							been made available for your comfort. It will be
+							super easy for you to know about any resource. Hope
+							you like our services. Cheers.
+						</p>
 
-          <a href="./contribution.html">
-            <button class="btn px-3 py-2 mt-2" id="contributionBtn">
-              See Contribution Guidlines
-            </button>
-          </a>
+						<a href="./contribution.html">
+							<button
+								class="btn px-3 py-2 mt-2"
+								id="contributionBtn"
+							>
+								See Contribution Guidlines
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Feature Section Starts -->
+		<section id="features">
+			<div class="container-fluid mt-5 p-3">
+				<h2 id="featureHeading">Features</h2>
+				<div class="row">
+					<div class="col-lg-6">
+						<!-- <hr style="border:4px solid blue;"/> -->
+						<!--Create a Feature Tray of 3-4 Items-->
+						<div
+							class="d-flex container flex-wrap justify-content-center"
+						>
+							<div class="col-sm-6">
+								<!-- <a href="./resource.html"> -->
+								<div class="card m-3">
+									<h5 class="card-title">Explore</h5>
+									<p class="card-text">
+										Find the domain you want to explore
+									</p>
+								</div>
+								<!-- </a> -->
+								<div class="card m-3">
+									<h5 class="card-title">Read</h5>
+									<p class="card-text">
+										Clear and concise for anyone to
+										understand
+									</p>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="card m-3">
+									<h5 class="card-title">Choose</h5>
+									<p class="card-text">
+										Choose from plethora of topics to start
+										with
+									</p>
+								</div>
 
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Feature Section Starts -->
-  <section id="features">
-    <div class="container-fluid mt-5 p-3">
-      <h2 id="featureHeading">Features</h2>
-      <div class="row">
-        <div class="col-lg-6">
-          
-      <!-- <hr style="border:4px solid blue;"/> -->
-      <!--Create a Feature Tray of 3-4 Items-->
-      <div class="d-flex container flex-wrap justify-content-center">
-        <div class="col-sm-6">
-        <a href="./resource.html">
-          <div class="card m-3" >
-            <img src="./assets/images/1.png" class="card-img-top img-sz mx-auto rounded-circle" alt="..." />
-            <div class="card-body text-center">
+								<div class="card m-3">
+									<h5 class="card-title">Learn</h5>
+									<p class="card-text">
+										Have fun while learning from the best
+										resources we provide
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-sm-0">
+						<img
+							class="feature-image"
+							src="./assets/images/Group 19.png"
+							height="500px"
+							width="370px"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Footer Section -->
+		<section>
+			<div style="width: 100%" class="container">
+				<div
+					id="contact"
+					class="col mb-2 d-flex flex-row align-items-left justify-content-between"
+				>
+					<div class="col-md-6 mt-2">
+						<div id="status"></div>
+					</div>
 
-              <h5 class="card-title"><b>Explore ...</b> </h5>
-              <p class="card-text">Find the domain you want to explore</p>
-            </div>
-          </div>
-        </a>
-        <div class="card m-3" >
-          <img src="./assets/images/2.png" class="card-img-top img-sz mx-auto rounded-circle" alt="..." />
-          <div class="card-body text-center">
-            <h5 class="card-title"><b>Choosing made easy</b></h5>
-            <p class="card-text">
-              Choose from plethora of topics to start with
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
+					<div
+						class="container"
+						style="margin-left: 50px; margin-bottom: 30px"
+					>
+						<div class="col-md-11 mt-3 row">
+							<div class="row-md"></div>
+							<div class="col-md"></div>
+						</div>
+					</div>
+				</div>
+				<div
+					id="social-media-icons"
+					class="d-flex justify-content-center"
+					style="margin-left: 40px"
+				>
+					<ul class="list-unstyled list-inline">
+						<li class="list-inline-item">
+							<a
+								href="https://www.facebook.com/dscjssnoida/"
+								target="_blank"
+								title="Facebook"
+								><i
+									class="fab fa-facebook social-media social-icons"
+									aria-hidden="true"
+								></i
+							></a>
+						</li>
+						<li class="list-inline-item">
+							<a
+								href="https://www.linkedin.com/company/dsc-jssaten/"
+								target="_blank"
+								title="Linkedin"
+								><i
+									class="fa fa-linkedin social-media social-icons"
+									aria-hidden="true"
+								></i
+							></a>
+						</li>
+						<li class="list-inline-item">
+							<a
+								href="https://twitter.com/DSCJSSATEN"
+								target="_blank"
+								title="Twitter"
+								><i
+									class="fa fa-twitter social-media social-icons"
+									aria-hidden="true"
+								></i
+							></a>
+						</li>
+						<li class="list-inline-item">
+							<a
+								href="https://github.com/DSC-JSS-NOIDA"
+								target="_blank"
+								title="Github"
+								><i
+									class="fa fa-github social-media social-icons"
+									aria-hidden="true"
+								></i
+							></a>
+						</li>
+						<li class="list-inline-item">
+							<a
+								href="https://www.instagram.com/gdscjssaten/"
+								target="_blank"
+								title="Instagram"
+								><i
+									class="fa fa-instagram social-media social-icons"
+									aria-hidden="true"
+								></i
+							></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer d-flex flex-coloumn justify-content-center p-1">
+				Made with ❤ By
+				<a href="https://dscjss.in" class="mx-2"> GDSC JSSATEN </a>
+				<a
+					href="https://github.com/dsc-jss-noida"
+					classname=" text-black github-footer"
+					rel="noopener noreferrer"
+					target="_blank"
+				>
+				</a>
+			</div>
+			<img
+				src="./assets/images/gdsc-logo.png"
+				style="display: block; width: 250px; margin: 10px auto"
+				classname="m-5 img-logo"
+				alt="gdsc_logo"
+			/>
+		</footer>
+		<!-- Footer Section Ends -->
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-        <div class="card m-3" >
-          <img src="./assets/images/3.png" class="card-img-top img-sz mx-auto rounded-circle" alt="..." />
-          <div class="card-body text-center">
-            <h5 class="card-title"><b>Comprehensible Content</b></h5>
-            <p class="card-text">
-              Clear and concise for anyone to understand
-            </p>
-          </div>
-        </div>
+		<script>
+			(function () {
+				"use strict";
+				var forms = document.querySelectorAll(".needs-validation");
+				Array.prototype.slice.call(forms).forEach(function (form) {
+					form.addEventListener(
+						"submit",
+						function (event) {
+							if (!form.checkValidity()) {
+								event.preventDefault();
+								event.stopPropagation();
+							}
 
-        <div class="card m-3" >
-          <img src="./assets/images/4.png" class="card-img-top img-sz mx-auto rounded-circle" alt="..." />
-          <div class="card-body text-center">
-            <h5 class="card-title"><b>Learn Quick!</b></h5>
-            <p class="card-text">
-              Have fun while learning from the best resources we provide
-            </p>
-          </div>
-        </div>
-      </div>
+							form.classList.add("was-validated");
+						},
+						false
+					);
+				});
+			})();
 
-      </div>
-        </div>
-        <div class="col-lg-6 col-sm-0">
-          <img class="feature-image" src="Group 19.png" height="500px" width="370px">
-        </div>
-      </div>
-
-    </div>
-
-  </section>
-  <!-- Footer Section -->
-  <section>
-    <div style="width: 100%;" class="container">
-      <div id="contact" class="col mb-2 d-flex flex-row align-items-left justify-content-between">
-        <div class="col-md-6 mt-2">
-          <div id="status"></div>
-        </div>
-
-        <div class="container" style="margin-left: 50px; margin-bottom: 30px;">
-          <div class="col-md-11 mt-3 row ">
-            <div class="row-md"></div>
-            <div class="col-md"></div>
-          </div>
-        </div>
-
-      </div>
-      <div id="social-media-icons" class="d-flex justify-content-center " style="margin-left:40px;">
-        <ul class="list-unstyled list-inline">
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com/dscjssnoida/" target="_blank" title="Facebook"><i
-                class="fab fa-facebook social-media social-icons" aria-hidden="true"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.linkedin.com/company/dsc-jssaten/" target="_blank" title="Linkedin"><i
-                class="fa fa-linkedin social-media social-icons" aria-hidden="true"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/DSCJSSATEN" target="_blank" title="Twitter"><i
-                class="fa fa-twitter social-media social-icons" aria-hidden="true"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://github.com/DSC-JSS-NOIDA" target="_blank" title="Github"><i
-                class="fa fa-github social-media social-icons" aria-hidden="true"></i></a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com/gdscjssaten/" target="_blank" title="Instagram"><i
-                class="fa fa-instagram social-media social-icons" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-
-
-  </section>
-  <footer>
-    <div class="footer d-flex flex-coloumn justify-content-center p-1">
-      Made with ❤ By <a href="https://dscjss.in" class="mx-2"> GDSC JSSATEN </a>
-      <a href="https://github.com/dsc-jss-noida" classname=" text-black github-footer" rel="noopener noreferrer"
-        target="_blank">
-      </a>
-    </div>
-    <img src="./assets/images/gdsc-logo.png" style="display: block; width: 250px; margin: 10px auto"
-      classname="m-5 img-logo" alt="gdsc_logo" />
-  </footer>
-  <!-- Footer Section Ends -->
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script>
-
-    (function () {
-      'use strict'
-      var forms = document.querySelectorAll('.needs-validation')
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
-
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })()
-
-    $(document).ready(function (e) {
-      $('.mybutton').on('mouseenter', function (e) {
-        x = e.pageX - $(this).offset().left;
-        y = e.pageY - $(this).offset().top;
-        $(this).find('span').css({ top: y, left: x })
-      })
-      $('.mybutton').on('mouseout', function (e) {
-        x = e.pageX - $(this).offset().left;
-        y = e.pageY - $(this).offset().top;
-        $(this).find('span').css({ top: y, left: x })
-      })
-    })
-  </script>
-  <script src="./js/index.js"></script>
-  <script src="https://kit.fontawesome.com/d5f8b6c1a9.js" crossorigin="anonymous"></script>
-</body>
-
+			$(document).ready(function (e) {
+				$(".mybutton").on("mouseenter", function (e) {
+					x = e.pageX - $(this).offset().left;
+					y = e.pageY - $(this).offset().top;
+					$(this).find("span").css({ top: y, left: x });
+				});
+				$(".mybutton").on("mouseout", function (e) {
+					x = e.pageX - $(this).offset().left;
+					y = e.pageY - $(this).offset().top;
+					$(this).find("span").css({ top: y, left: x });
+				});
+			});
+		</script>
+		<script src="./js/index.js"></script>
+	</body>
 </html>

@@ -183,14 +183,6 @@ a:hover {
 	text-align: center;
 }
 
-/* .card {
-	transition: all 0.3s ease-in;
-	padding: 1.1rem;
-	background-color: #96a6ce5b;
-	border-radius: 1.25rem;
-	box-shadow: 5px 5px 10px #095557;
-	width: 18rem;
-} */
 .card {
 	transition: all 0.3s ease-in;
 	padding: 1.1rem;

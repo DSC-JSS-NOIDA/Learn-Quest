@@ -1,7 +1,5 @@
 *{
   padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 :root {
   --primary-background: #fff;
@@ -21,16 +19,14 @@
 html,
 body {
   scroll-behavior:smooth;
-  border: 1px ;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   z-index: -2;
   transition: 2s;
-  background-color: bisque;
   /* background-color: var(--primary-background); */
   /* background: linear-gradient(180deg, #EBFAFD 0%, #040404 0.01%, #424242 100%) !important; */
-  /* background: url('/assets/images/qlbg.png') no-repeat center center/cover; */
+  background: url('/assets/images/qlbg.png') no-repeat center center/cover;
 }
 
 /* .home{
@@ -92,7 +88,7 @@ a:hover {
 #navResourceBtn:hover {
   border: 2px solid var(--primary-title);
   color: var(--primary-title);
-  background-color: rgb(248, 201, 201);
+  background-color: white;
   
 }
 
@@ -149,7 +145,7 @@ a:hover {
 #exploreBtn:hover {
   border: 3px solid var(--primary-title);
   color: var(--primary-title);
-  background-color: rgb(248, 201, 201);
+  background-color: white;
 }
 
 #aboutUs {
@@ -193,7 +189,7 @@ a:hover {
 #contributionBtn:hover {
   border: 3px solid var(--primary-title);
   color: var(--primary-title);
-  background-color: rgb(248, 201, 201);
+  background-color: white;
 }
 
 /* Feature Section */
@@ -406,7 +402,7 @@ color: #2C97A9;
 }
 
 .category .btn-style:hover {
-  background: rgb(248, 201, 201);
+  background: #dacff6;
 }
 
 .select-category-btn {
@@ -432,7 +428,7 @@ color: #2C97A9;
 }
 
 .view-more-btn:hover {
-  background-color: rgb(248, 201, 201);
+  background-color: white;
   color: var(--primary-title);
   border: 2px solid var(--primary-title);
 }
@@ -775,14 +771,14 @@ footer {
 
 .to-top{
   z-index: 10;
-  display:none;
+  display: none;
   position:absolute;
   bottom: 40px;
   right: 40px;
   border-radius: 20px;
-  background-color: #195e60d6;
-  height: 100px;
-  width:100px;
+  background-color: #095457d6;
+  height: 80px;
+  width:80px;
 }
 
 .to-top .btn-top{
@@ -793,7 +789,7 @@ footer {
   outline: none;
 }
 
-.to-top .btn-top:hover{
+.to-top .btn-top:focus{
   outline:none;
 }
 
@@ -860,21 +856,18 @@ footer {
 .bdgw{
   background-color: #EBFAFD;
 }
-
 .newHeading{
   font-family: cursive;
   font-size: 50%;
   padding: 4px;
-  color: rgb(240, 132, 132);
-  font-weight: 500;
+  font-weight: 1000;
+}
+.newHeading:hover{
+  transition: 1.5s;
+  text-decoration: underline;
 }
 .new{
   box-sizing: border-box;
   text-align: center;
   
-}
-.newHeading:hover{
-  color: red;
-  transition: 1.5s;
-  text-decoration: underline;
 }

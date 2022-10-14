@@ -853,3 +853,25 @@ footer {
 .bdgw{
   background-color: #EBFAFD;
 }
+#resource button{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 10px;
+}
+#resource .category a{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px grey;
+}
+#resource .category a img{
+  transition: 0.4s ease-out;
+}
+#resource .category a img:hover{
+  transform: scale(1.08);
+}
+.category{
+  text-align: center;
+}

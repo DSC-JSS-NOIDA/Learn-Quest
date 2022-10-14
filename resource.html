@@ -1,518 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- ---------------- FAVICON ------------------ -->
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="assets/images/favicon.png"
-    />
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <!--Font Aswesome-->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
-    <!--Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <!--Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <title>LearnQuest</title>
-    <style>
-      .img-sz {
-        width: 10rem;
-        height: 8rem;
-      }
-      ::-webkit-scrollbar {
-        width: 12px;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #083840;
-        border-radius: 30px;
-      }
-      #qlbg {
-        /* background: #000; */
-        position: absolute;
-        /* z-index: -1; */
-        height: 100vh;
-      }
-    </style>
-  </head>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body id="resource">
-    <!--Navbar Section -->
-    <!-- <div id="qlbg">bg</div> -->
-    <div class="to-top">
-      <button class="btn btn-top">Back To Top</button>
-    </div>
-    <nav class="nav p-3">
-      <a href="/index.html" id="logo" class="navbar-brand font-weight-bold">
-        LearnQuest
-      </a>
-      <a class="nav-link btn" href="./index.html" id="navResourceBtn">Home</a>
-      <span class="btn"  style="display: block; margin-left: 2px; color: #6940d3;" href="#"><i
-        id="darkSwitch1" class="fas fa-moon darkmodeicon" onclick="dark_mode(this)"></i></span>
-    </nav>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- ---------------- FAVICON ------------------ -->
+  <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!--Font Aswesome-->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <!--Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <!--Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Josefin+Sans:wght@700&family=Montserrat:wght@400;500&family=Nunito:wght@700&family=Peralta&family=Quicksand:wght@400;700&family=Raleway:wght@500&family=Silkscreen&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
-    <div class="container-fluid my-3" id="resourceContainer">
-      <div id="resourceSection" class="d-flex flex-column p-3 m-3 mx-4">
-        <h4 id="categoryText"><b>Categories</b></h4>
-        <hr class="catHr" />
-        <ul id="categoryList" class="nav nav-pills flex-column mb-auto">
-          <li class="d-none">
-            <button class="link-dark contribution-btn" id="contributeBtn">
-              Contribution Button
-            </button>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Programming</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=programming&&subdomain=cplus">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="programming"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  C++
-                </button>
-              </a>
-              <a href="./details.html?domain=programming&&subdomain=java">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="programming"
-                >
-                  <div><img src="./assets/images/cat7.png" /></div>
-                  Java
-                </button>
-              </a>
-              <a href="./details.html?domain=programming&&subdomain=python">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="programming"
-                >
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  Python
-                </button>
-              </a>
-              <a href="./details.html?domain=programming&&subdomain=javascript">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="programming"
-                >
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  Javascript
-                </button>
-              </a>
-              <a href="./details.html?domain=programming&&subdomain=php">
-                <button class="btn select-category-btn" value="programming">
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  PHP
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Web Development</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=web&&subdomain=frontend">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  Frontend
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=backend">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat1.png" /></div>
-                  Backend
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=mean">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  MEAN
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=mern">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  MERN
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=mevn">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  MEVN
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=ruby_on_rails">
-                <button class="btn select-category-btn" value="web">
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  Ruby on Rails
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Mobile Development</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=android&&subdomain=android">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="android"
-                >
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  Android
-                </button>
-              </a>
-              <a href="./details.html?domain=android&&subdomain=flutter">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="android"
-                >
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  Flutter
-                </button>
-              </a>
-              <a href="./details.html?domain=android&&subdomain=ios">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="android"
-                >
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  IOS
-                </button>
-              </a>
-              <a href="./details.html?domain=android&&subdomain=react_native">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="android"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  React Native
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">
-              Application Programming Interface
-            </button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=api&&subdomain=api">
-                <button class="btn select-category-btn" value="api">
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  API
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Designing</button>
+  <title>LearnQuest</title>
+  <style>
+    .img-sz {
+      width: 10rem;
+      height: 8rem;
+    }
 
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=design&&subdomain=general">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  General
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=illustrations">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  Illustrations
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=motion">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat7.png" /></div>
-                  Motion
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=photo">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  Photo
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=sound">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  Sound
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=ui-ux">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat1.png" /></div>
-                  UI/UX
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=video">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat8.png" /></div>
-                  Video
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">
-              Artificial Intelligience
-            </button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=ai&&subdomain=ai">
-                <button class="btn select-category-btn shadow-none" value="ai">
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  AI
-                </button>
-              </a>
-              <a href="./details.html?domain=ai&&subdomain=computer_vision">
-                <button class="btn select-category-btn shadow-none" value="ai">
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  ML
-                </button>
-              </a>
-              <a href="./details.html?domain=ai&&subdomain=machine_learning">
-                <button class="btn select-category-btn shadow-none" value="ai">
-                  <div><img src="./assets/images/cat6.png" /></div>
-                  Computer Vision
-                </button>
-              </a>
-              <a href="./details.html?domain=ai&&subdomain=deep_learning">
-              <button class="btn select-category-btn shadow-none" value="ai">
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #083840;
+      border-radius: 30px;
+    }
+
+    #qlbg {
+      /* background: #000; */
+      position: absolute;
+      /* z-index: -1; */
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body id="resource">
+  <!--Navbar Section -->
+  <!-- <div id="qlbg">bg</div> -->
+  <div class="to-top">
+    <button class="btn btn-top"><i class="zmdi zmdi-long-arrow-up"></i>
+    </button>
+  </div>
+  <nav class="nav p-3">
+    <a href="index.html" id="logo" class="navbar-brand font-weight-bold">
+      LearnQuest
+    </a>
+    <a class="nav-link btn" href="./index.html" id="navResourceBtn">Home</a>
+    <span class="btn" style="display: block; margin-left: 2px; color: #6940d3;" href="#"><i id="darkSwitch1"
+        class="fas fa-moon darkmodeicon" onclick="dark_mode(this)"></i></span>
+  </nav>
+
+  <div class="container-fluid my-3" id="resourceContainer">
+    <div id="resourceSection" class="d-flex flex-column p-3 m-3 mx-4">
+      <h4 id="categoryText"><b>Categories</b></h4>
+      <hr class="catHr" />
+      <ul id="categoryList" class="nav nav-pills flex-column mb-auto">
+        <li class="d-none">
+          <button class="link-dark contribution-btn" id="contributeBtn">
+            Contribution Button
+          </button>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Programming</button>
+          <div class="select-option d-flex flex-wrap my-3 ">
+            <a href="./details.html?domain=programming&&subdomain=cplus">
+              <button class="btn  shadow-none" value="programming">
+                <div><img src="./assets/images/cat4.png" /></div>
+                C++
+              </button>
+            </a>
+            <a href="./details.html?domain=programming&&subdomain=java">
+              <button class="btn  shadow-none" value="programming">
+                <div><img src="./assets/images/cat7.png" /></div>
+                Java
+              </button>
+            </a>
+            <a href="./details.html?domain=programming&&subdomain=python">
+              <button class="btn  shadow-none" value="programming">
+                <div><img src="./assets/images/cat5.png" /></div>
+                Python
+              </button>
+            </a>
+            <a href="./details.html?domain=programming&&subdomain=javascript">
+              <button class="btn  shadow-none" value="programming">
+                <div><img src="./assets/images/cat2.png" /></div>
+                Javascript
+              </button>
+            </a>
+            <a href="./details.html?domain=programming&&subdomain=php">
+              <button class="btn " value="programming">
+                <div><img src="./assets/images/cat3.png" /></div>
+                PHP
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Web Development</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=web&&subdomain=frontend">
+              <button class="btn  shadow-none" value="web">
+                <div><img src="./assets/images/cat4.png" /></div>
+                Frontend
+              </button>
+            </a>
+            <a href="./details.html?domain=web&&subdomain=backend">
+              <button class="btn  shadow-none" value="web">
+                <div><img src="./assets/images/cat1.png" /></div>
+                Backend
+              </button>
+            </a>
+            <a href="./details.html?domain=web&&subdomain=mean">
+              <button class="btn  shadow-none" value="web">
+                <div><img src="./assets/images/cat2.png" /></div>
+                MEAN
+              </button>
+            </a>
+            <a href="./details.html?domain=web&&subdomain=mern">
+              <button class="btn  shadow-none" value="web">
+                <div><img src="./assets/images/cat3.png" /></div>
+                MERN
+              </button>
+            </a>
+            <a href="./details.html?domain=web&&subdomain=mevn">
+              <button class="btn  shadow-none" value="web">
+                <div><img src="./assets/images/cat4.png" /></div>
+                MEVN
+              </button>
+            </a>
+            <a href="./details.html?domain=web&&subdomain=ruby_on_rails">
+              <button class="btn " value="web">
+                <div><img src="./assets/images/cat5.png" /></div>
+                Ruby on Rails
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Mobile Development</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=android&&subdomain=android">
+              <button class="btn  shadow-none" value="android">
+                <div><img src="./assets/images/cat2.png" /></div>
+                Android
+              </button>
+            </a>
+            <a href="./details.html?domain=android&&subdomain=flutter">
+              <button class="btn  shadow-none" value="android">
+                <div><img src="./assets/images/cat3.png" /></div>
+                Flutter
+              </button>
+            </a>
+            <a href="./details.html?domain=android&&subdomain=ios">
+              <button class="btn  shadow-none" value="android">
+                <div><img src="./assets/images/cat5.png" /></div>
+                IOS
+              </button>
+            </a>
+            <a href="./details.html?domain=android&&subdomain=react_native">
+              <button class="btn  shadow-none" value="android">
+                <div><img src="./assets/images/cat4.png" /></div>
+                React Native
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">
+            Application Programming Interface
+          </button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=api&&subdomain=api">
+              <button class="btn " value="api">
+                <div><img src="./assets/images/cat2.png" /></div>
+                API
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Designing</button>
+
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=design&&subdomain=general">
+              <button class="btn  shadow-none" value="design">
+                <div><img src="./assets/images/cat3.png" /></div>
+                General
+              </button>
+            </a>
+            <a href="./details.html?domain=design&&subdomain=illustrations">
+              <button class="btn  shadow-none" value="design">
+                <div><img src="./assets/images/cat4.png" /></div>
+                Illustrations
+              </button>
+            </a>
+            <a href="./details.html?domain=design&&subdomain=motion">
+              <button class="btn  shadow-none" value="design">
+                <div><img src="./assets/images/cat7.png" /></div>
+                Motion
+              </button>
+            </a>
+            <a href="./details.html?domain=design&&subdomain=photo">
+              <button class="btn  shadow-none" value="design">
+                <div><img src="./assets/images/cat3.png" /></div>
+                Photo
+              </button>
+            </a>
+            <a href="./details.html?domain=design&&subdomain=sound">
+              <button class="btn  shadow-none" value="design">
+                <div><img src="./assets/images/cat5.png" /></div>
+                Sound
+              </button>
+            </a>
+            <a href="./details.html?domain=design&&subdomain=ui-ux">
+              <button class="btn  shadow-none" value="design">
+                <div><img src="./assets/images/cat1.png" /></div>
+                UI/UX
+              </button>
+            </a>
+            <a href="./details.html?domain=design&&subdomain=video">
+              <button class="btn  shadow-none" value="design">
+                <div><img src="./assets/images/cat8.png" /></div>
+                Video
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">
+            Artificial Intelligience
+          </button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=ai&&subdomain=ai">
+              <button class="btn  shadow-none" value="ai">
+                <div><img src="./assets/images/cat3.png" /></div>
+                AI
+              </button>
+            </a>
+            <a href="./details.html?domain=ai&&subdomain=computer_vision">
+              <button class="btn  shadow-none" value="ai">
+                <div><img src="./assets/images/cat2.png" /></div>
+                ML
+              </button>
+            </a>
+            <a href="./details.html?domain=ai&&subdomain=machine_learning">
+              <button class="btn  shadow-none" value="ai">
+                <div><img src="./assets/images/cat6.png" /></div>
+                Computer Vision
+              </button>
+            </a>
+            <a href="./details.html?domain=ai&&subdomain=deep_learning">
+              <button class="btn  shadow-none" value="ai">
                 <div><img src="./assets/images/cat5.png" /></div>
                 Deep Learning
               </button>
             </a>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Data Science</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=data_science&&subdomain=statistics">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="data_science"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  Statistics
-                </button>
-              </a>
-              <a href="./details.html?domain=data_science&&subdomain=big_data">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="data_science"
-                >
-                  <div><img src="./assets/images/cat6.png" /></div>
-                  Big Data
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Git and GitHub</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=git&&subdomain=git">
-                <button class="btn select-category-btn" value="git">
-                  <div><img src="./assets/images/cat8.png" /></div>
-                  Git and GitHub
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">
-              Data Structures & Algorithms
-            </button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=data_structure&&subdomain=data_structure">
-                <button
-                  class="btn select-category-btn"
-                  value="data_structure"
-                >
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  Data structures & Algorithms
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Database Management</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=database_management&&subdomain=database_management">
-                <button
-                  class="btn select-category-btn"
-                  value="database_management"
-                >
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  Database Management
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Blockchain Development</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=Blockchain&&subdomain=Blockchain">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="Blockchain"
-                >
-                  <div><img src="./assets/images/cat7.png" /></div>
-                  Blockchain
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Ethical Hacking</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=ethical_hacking&&subdomain=ethical_hacking">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="ethical_hacking"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  Ethical Hacking
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Game Development</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=Game_dev&&subdomain=Game_dev">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="Game_dev"
-                >
-                  <div><img src="./assets/images/cat1.png" /></div>
-                  Game Development
-                </button>
-              </a>
-            </div>
-          </li>
-          <li class="category">
-            <button class="link-dark btn-style">Robotics</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=robotics&&subdomain=robotics">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="robotics"
-                >
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  Robotics
-                </button>
-              </a>
-            </div>
-          </li>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Data Science</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=data_science&&subdomain=statistics">
+              <button class="btn  shadow-none" value="data_science">
+                <div><img src="./assets/images/cat4.png" /></div>
+                Statistics
+              </button>
+            </a>
+            <a href="./details.html?domain=data_science&&subdomain=big_data">
+              <button class="btn  shadow-none" value="data_science">
+                <div><img src="./assets/images/cat6.png" /></div>
+                Big Data
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Git and GitHub</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=git&&subdomain=git">
+              <button class="btn " value="git">
+                <div><img src="./assets/images/cat8.png" /></div>
+                Git and GitHub
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">
+            Data Structures & Algorithms
+          </button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=data_structure&&subdomain=data_structure">
+              <button class="btn " value="data_structure">
+                <div><img src="./assets/images/cat2.png" /></div>
+                Data structures & Algorithms
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Database Management</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=database_management&&subdomain=database_management">
+              <button class="btn " value="database_management">
+                <div><img src="./assets/images/cat3.png" /></div>
+                Database Management
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Blockchain Development</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=Blockchain&&subdomain=Blockchain">
+              <button class="btn  shadow-none" value="Blockchain">
+                <div><img src="./assets/images/cat7.png" /></div>
+                Blockchain
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Ethical Hacking</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=ethical_hacking&&subdomain=ethical_hacking">
+              <button class="btn  shadow-none" value="ethical_hacking">
+                <div><img src="./assets/images/cat4.png" /></div>
+                Ethical Hacking
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Game Development</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=Game_dev&&subdomain=Game_dev">
+              <button class="btn  shadow-none" value="Game_dev">
+                <div><img src="./assets/images/cat1.png" /></div>
+                Game Development
+              </button>
+            </a>
+          </div>
+        </li>
+        <li class="category">
+          <button class="link-dark btn-style">Robotics</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=robotics&&subdomain=robotics">
+              <button class="btn  shadow-none" value="robotics">
+                <div><img src="./assets/images/cat5.png" /></div>
+                Robotics
+              </button>
+            </a>
+          </div>
+        </li>
 
-          <li class="category">
-            <button class="link-dark btn-style">Linux Fundamentals</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=linux&&subdomain=linux">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="linux"
-                >
-                  <div><img src="./assets/images/cat1.png" /></div>
-                  linux
-                </button>
-              </a>
-            </div>
-          </li>
+        <li class="category">
+          <button class="link-dark btn-style">Linux Fundamentals</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=linux&&subdomain=linux">
+              <button class="btn  shadow-none" value="linux">
+                <div><img src="./assets/images/cat1.png" /></div>
+                linux
+              </button>
+            </a>
+          </div>
+        </li>
 
-          <li class="category">
-            <button class="link-dark btn-style">CyberSecurity</button>
-            <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=CyberSecurity&&subdomain=CyberSecurity">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="CyberSecurity"
-                >
-                  <div><img src="./assets/images/cat7.png" /></div>
-                  CyberSecurity
-                </button>
-              </a>
-            </div>
-          </li>
-        </ul>
-        <hr class="catHr" />
-      </div>
+        <li class="category">
+          <button class="link-dark btn-style">CyberSecurity</button>
+          <div class="select-option d-flex flex-wrap my-3">
+            <a href="./details.html?domain=CyberSecurity&&subdomain=CyberSecurity">
+              <button class="btn  shadow-none" value="CyberSecurity">
+                <div><img src="./assets/images/cat7.png" /></div>
+                CyberSecurity
+              </button>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <hr class="catHr" />
     </div>
+  </div>
 
-    <footer>
-      <div class="footer d-flex flex-coloumn justify-content-center">
-        Made with ❤ By <a href="https://dscjss.in" class="mx-2">GDSC JSSATEN</a>
-        <a
-          href="https://github.com/dsc-jss-noida"
-          classname=" text-black github-footer"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-        </a>
-      </div>
-      <img
-        src="./assets/images/gdsc-logo.png"
-        style="display: block; width: 250px; margin: 10px auto"
-        classname="m-5 img-logo"
-        alt="gdsc_logo"
-      />
-    </footer>
-    
-    <!-- Footer Section Ends -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/Contribution.js"></script> <!-- The back to top function is added in this -->
-    <script src="./js/getResource.js"></script>
-    <script
-      src="https://kit.fontawesome.com/d5f8b6c1a9.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="./details.js"></script> -->
-  </body>
+  <footer>
+    <div class="footer d-flex flex-coloumn justify-content-center">
+      Made with ❤ By <a href="https://dscjss.in" class="mx-2">GDSC JSSATEN</a>
+      <a href="https://github.com/dsc-jss-noida" classname=" text-black github-footer" rel="noopener noreferrer"
+        target="_blank">
+      </a>
+    </div>
+    <img src="./assets/images/gdsc-logo.png" style="display: block; width: 250px; margin: 10px auto"
+      classname="m-5 img-logo" alt="gdsc_logo" />
+  </footer>
+
+  <!-- Footer Section Ends -->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/Contribution.js"></script> <!-- The back to top function is added in this -->
+  <script src="./js/getResource.js"></script>
+  <script src="https://kit.fontawesome.com/d5f8b6c1a9.js" crossorigin="anonymous"></script>
+  <!-- <script src="./details.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+
+    (function () {
+      'use strict'
+      var forms = document.querySelectorAll('.needs-validation')
+      Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+    })()
+
+    $(document).ready(function (e) {
+      $('.mybutton').on('mouseenter', function (e) {
+        x = e.pageX - $(this).offset().left;
+        y = e.pageY - $(this).offset().top;
+        $(this).find('span').css({ top: y, left: x })
+      })
+      $('.mybutton').on('mouseout', function (e) {
+        x = e.pageX - $(this).offset().left;
+        y = e.pageY - $(this).offset().top;
+        $(this).find('span').css({ top: y, left: x })
+      })
+    })
+  </script>
+  <script src="./js/index.js"></script>
+  <script src="https://kit.fontawesome.com/d5f8b6c1a9.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

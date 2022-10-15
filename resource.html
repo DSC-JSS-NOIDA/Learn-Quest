@@ -56,6 +56,35 @@
         /* z-index: -1; */
         height: 100vh;
       }
+      .card{
+        background: rgba(250, 250, 250, 0.89);
+      }
+      .card-title {
+        color: #083840;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 20px;
+        margin: auto;
+        margin-bottom: 10px;
+      }
+      .btn-primary{
+        background-color: var(--primary-title);
+        border: 3px solid var(--primary-title);
+        color: white;
+        font-size: 1.3rem;
+        transition: 0.2s linear all;
+      }
+
+      .btn-primary:hover {
+        border: 3px solid var(--primary-title);
+        color: var(--primary-title);
+        background-color: white;
+      }
+
+      .card-img-top{
+        object-fit: contain;
+      }
     </style>
   </head>
 
@@ -87,393 +116,534 @@
           <li class="category">
             <button class="link-dark btn-style">Programming</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=programming&&subdomain=cplus">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="programming"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  C++
-                </button>
-              </a>
-              <a href="./details.html?domain=programming&&subdomain=java">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="programming"
-                >
-                  <div><img src="./assets/images/cat7.png" /></div>
-                  Java
-                </button>
-              </a>
-              <a href="./details.html?domain=programming&&subdomain=python">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="programming"
-                >
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  Python
-                </button>
-              </a>
-              <a href="./details.html?domain=programming&&subdomain=javascript">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="programming"
-                >
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  Javascript
-                </button>
-              </a>
-              <a href="./details.html?domain=programming&&subdomain=php">
-                <button class="btn select-category-btn" value="programming">
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  PHP
-                </button>
-              </a>
-            </div>
+
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat4.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">C++</h5>
+                        <div class="text-center"><a href="./details.html?domain=programming&&subdomain=cplus" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat7.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">JAVA</h5>
+                        <div class="text-center"><a href="./details.html?domain=programming&&subdomain=java" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat5.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                        <div class="text-center"><a href="./details.html?domain=programming&&subdomain=python" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat2.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Javascript</h5>
+                        <div class="text-center"><a href="./details.html?domain=programming&&subdomain=javascript" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat3.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <div class="text-center">
+                          <a href="./details.html?domain=programming&&subdomain=php"  class="btn btn-primary btn-block">Explore</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              
           </li>
           <li class="category">
             <button class="link-dark btn-style">Web Development</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=web&&subdomain=frontend">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  Frontend
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=backend">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat1.png" /></div>
-                  Backend
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=mean">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  MEAN
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=mern">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  MERN
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=mevn">
-                <button class="btn select-category-btn shadow-none" value="web">
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  MEVN
-                </button>
-              </a>
-              <a href="./details.html?domain=web&&subdomain=ruby_on_rails">
-                <button class="btn select-category-btn" value="web">
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  Ruby on Rails
-                </button>
-              </a>
-            </div>
+
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat4.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Frontend</h5>
+                        <div class="text-center"><a href="./details.html?domain=web&&subdomain=frontend" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat1.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Backend</h5>
+                        <div class="text-center"><a href="./details.html?domain=web&&subdomain=backend" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat2.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">MEAN</h5>
+                        <div class="text-center"><a href="./details.html?domain=web&&subdomain=mean" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat3.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">MERN</h5>
+                        <div class="text-center"><a href="./details.html?domain=web&&subdomain=mern" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat4.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">MEVN</h5>
+                        <div class="text-center"><a href="./details.html?domain=web&&subdomain=mevn" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat5.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Ruby on Rails</h5>
+                        <div class="text-center">
+                          <a href="./details.html?domain=web&&subdomain=ruby_on_rails"  class="btn btn-primary btn-block">Explore</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>             
           </li>
+          <!-- Mobile Development -->
           <li class="category">
             <button class="link-dark btn-style">Mobile Development</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=android&&subdomain=android">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="android"
-                >
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  Android
-                </button>
-              </a>
-              <a href="./details.html?domain=android&&subdomain=flutter">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="android"
-                >
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  Flutter
-                </button>
-              </a>
-              <a href="./details.html?domain=android&&subdomain=ios">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="android"
-                >
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  IOS
-                </button>
-              </a>
-              <a href="./details.html?domain=android&&subdomain=react_native">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="android"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  React Native
-                </button>
-              </a>
-            </div>
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat2.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Android</h5>
+                        <div class="text-center"><a href="./details.html?domain=android&&subdomain=android" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat3.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Flutter</h5>
+                        <div class="text-center"><a href="./details.html?domain=android&&subdomain=flutter" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat5.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">IOS</h5>
+                        <div class="text-center"><a href="./details.html?domain=android&&subdomain=ios" class="btn btn-primary  btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat4.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">React Native</h5>
+                        <div class="text-center"><a href="./details.html?domain=android&&subdomain=react_native" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
           </li>
+          <!-- API -->
           <li class="category">
             <button class="link-dark btn-style">
               Application Programming Interface
             </button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=api&&subdomain=api">
-                <button class="btn select-category-btn" value="api">
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  API
-                </button>
-              </a>
-            </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                  <img class="card-img-top" src="./assets/images/cat2.png" alt="cardImg">
+                  <div class="card-body">
+                    <h5 class="card-title">API</h5>
+                    <div class="text-center"><a href="./details.html?domain=api&&subdomain=api" class="btn btn-primary btn-block">Explore</a></div>
+                  </div>
+                </div>
+              </div>
           </li>
+          <!-- Desigining -->
           <li class="category">
             <button class="link-dark btn-style">Designing</button>
 
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=design&&subdomain=general">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  General
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=illustrations">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  Illustrations
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=motion">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat7.png" /></div>
-                  Motion
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=photo">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  Photo
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=sound">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  Sound
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=ui-ux">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat1.png" /></div>
-                  UI/UX
-                </button>
-              </a>
-              <a href="./details.html?domain=design&&subdomain=video">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="design"
-                >
-                  <div><img src="./assets/images/cat8.png" /></div>
-                  Video
-                </button>
-              </a>
-            </div>
+
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat3.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">General</h5>
+                        <div class="text-center"><a href="./details.html?domain=design&&subdomain=general" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat4.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Illustrations</h5>
+                        <div class="text-center"><a href="./details.html?domain=design&&subdomain=illustrations" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat7.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Motion</h5>
+                        <div class="text-center"><a href="./details.html?domain=design&&subdomain=motion" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat3.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Photo</h5>
+                        <div class="text-center"><a href="./details.html?domain=design&&subdomain=photo" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat5.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Sound</h5>
+                        <div class="text-center">
+                          <a href="./details.html?domain=design&&subdomain=sound"  class="btn btn-primary btn-block">Explore</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat1.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">UI/UX</h5>
+                        <div class="text-center">
+                          <a href="./details.html?domain=design&&subdomain=ui-ux"  class="btn btn-primary btn-block">Explore</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat8.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Video</h5>
+                        <div class="text-center">
+                          <a href="./details.html?domain=design&&subdomain=video"  class="btn btn-primary btn-block">Explore</a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
           </li>
+          <!-- AI -->
           <li class="category">
             <button class="link-dark btn-style">
               Artificial Intelligience
             </button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=ai&&subdomain=ai">
-                <button class="btn select-category-btn shadow-none" value="ai">
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  AI
-                </button>
-              </a>
-              <a href="./details.html?domain=ai&&subdomain=computer_vision">
-                <button class="btn select-category-btn shadow-none" value="ai">
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  ML
-                </button>
-              </a>
-              <a href="./details.html?domain=ai&&subdomain=machine_learning">
-                <button class="btn select-category-btn shadow-none" value="ai">
-                  <div><img src="./assets/images/cat6.png" /></div>
-                  Computer Vision
-                </button>
-              </a>
-              <a href="./details.html?domain=ai&&subdomain=deep_learning">
-              <button class="btn select-category-btn shadow-none" value="ai">
-                <div><img src="./assets/images/cat5.png" /></div>
-                Deep Learning
-              </button>
-            </a>
+
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat3.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">AI</h5>
+                        <div class="text-center"><a href="./details.html?domain=ai&&subdomain=ai" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat2.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Machine Learning</h5>
+                        <div class="text-center"><a href="./details.html?domain=ai&&subdomain=computer_vision" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat6.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Computer Vision</h5>
+                        <div class="text-center"><a href="./details.html?domain=ai&&subdomain=machine_learning" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat5.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Deep Learning</h5>
+                        <div class="text-center"><a href="./details.html?domain=ai&&subdomain=deep_learning" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+              
           </li>
+
+          <!-- Data Science -->
           <li class="category">
             <button class="link-dark btn-style">Data Science</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=data_science&&subdomain=statistics">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="data_science"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  Statistics
-                </button>
-              </a>
-              <a href="./details.html?domain=data_science&&subdomain=big_data">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="data_science"
-                >
-                  <div><img src="./assets/images/cat6.png" /></div>
-                  Big Data
-                </button>
-              </a>
-            </div>
+
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat4.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Statistics</h5>
+                        <div class="text-center"><a href="./details.html?domain=data_science&&subdomain=statistics" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top" src="./assets/images/cat6.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Big Data</h5>
+                        <div class="text-center"><a href="./details.html?domain=data_science&&subdomain=big_data" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+
+              
           </li>
+
+          <!-- Git and Github -->
           <li class="category">
             <button class="link-dark btn-style">Git and GitHub</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=git&&subdomain=git">
-                <button class="btn select-category-btn" value="git">
-                  <div><img src="./assets/images/cat8.png" /></div>
-                  Git and GitHub
-                </button>
-              </a>
-            </div>
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat8.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Git and GitHub</h5>
+                        <div class="text-center"><a href="./details.html?domain=git&&subdomain=git" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
           </li>
+
+          <!-- DSA -->
           <li class="category">
             <button class="link-dark btn-style">
               Data Structures & Algorithms
             </button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=data_structure&&subdomain=data_structure">
-                <button
-                  class="btn select-category-btn"
-                  value="data_structure"
-                >
-                  <div><img src="./assets/images/cat2.png" /></div>
-                  Data structures & Algorithms
-                </button>
-              </a>
-            </div>
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat2.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 13px;">Data structures & Algorithms</h5>
+                        <div class="text-center"><a href="./details.html?domain=data_structure&&subdomain=data_structure" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
           </li>
+
+          <!-- DBMS -->
           <li class="category">
             <button class="link-dark btn-style">Database Management</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=database_management&&subdomain=database_management">
-                <button
-                  class="btn select-category-btn"
-                  value="database_management"
-                >
-                  <div><img src="./assets/images/cat3.png" /></div>
-                  Database Management
-                </button>
-              </a>
-            </div>
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat3.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title" style="font-size: 13px;">Database Managament</h5>
+                        <div class="text-center"><a href="./details.html?domain=database_management&&subdomain=database_management" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
           </li>
+          <!-- BlockChain -->
           <li class="category">
             <button class="link-dark btn-style">Blockchain Development</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=Blockchain&&subdomain=Blockchain">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="Blockchain"
-                >
-                  <div><img src="./assets/images/cat7.png" /></div>
-                  Blockchain
-                </button>
-              </a>
-            </div>
+
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat7.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Blockchain</h5>
+                        <div class="text-center"><a href="./details.html?domain=Blockchain&&subdomain=Blockchain" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
+             
           </li>
+          <!-- Ethical Hacking -->
           <li class="category">
             <button class="link-dark btn-style">Ethical Hacking</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=ethical_hacking&&subdomain=ethical_hacking">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="ethical_hacking"
-                >
-                  <div><img src="./assets/images/cat4.png" /></div>
-                  Ethical Hacking
-                </button>
-              </a>
+                <!-- adding card -->
+                <div class="container">
+                  <div class="row g-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card">
+                        <img class="card-img-top"  src="./assets/images/cat4.png" alt="cardImg">
+                        <div class="card-body">
+                          <h5 class="card-title">Ethical Hacking</h5>
+                          <div class="text-center"><a href="./details.html?domain=ethical_hacking&&subdomain=ethical_hacking" class="btn btn-primary btn-block">Explore</a></div>
+                        </div>
+                      </div>
+                    </div>
             </div>
           </li>
+          <!-- Game Development -->
           <li class="category">
             <button class="link-dark btn-style">Game Development</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=Game_dev&&subdomain=Game_dev">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="Game_dev"
-                >
-                  <div><img src="./assets/images/cat1.png" /></div>
-                  Game Development
-                </button>
-              </a>
-            </div>
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat1.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">Game Development</h5>
+                        <div class="text-center"><a href="./details.html?domain=Game_dev&&subdomain=Game_dev" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
           </li>
+          <!-- Robotics -->
           <li class="category">
             <button class="link-dark btn-style">Robotics</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=robotics&&subdomain=robotics">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="robotics"
-                >
-                  <div><img src="./assets/images/cat5.png" /></div>
-                  Robotics
-                </button>
-              </a>
-            </div>
+                <!-- adding card -->
+                <div class="container">
+                  <div class="row g-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card">
+                        <img class="card-img-top"  src="./assets/images/cat5.png" alt="cardImg">
+                        <div class="card-body">
+                          <h5 class="card-title">Robotics</h5>
+                          <div class="text-center"><a href="./details.html?domain=robotics&&subdomain=robotics" class="btn btn-primary btn-block">Explore</a></div>
+                        </div>
+                      </div>
+                    </div>
           </li>
-
+          <!-- Linux -->
           <li class="category">
             <button class="link-dark btn-style">Linux Fundamentals</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=linux&&subdomain=linux">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="linux"
-                >
-                  <div><img src="./assets/images/cat1.png" /></div>
-                  linux
-                </button>
-              </a>
-            </div>
+                <!-- adding card -->
+                <div class="container">
+                  <div class="row g-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card">
+                        <img class="card-img-top"  src="./assets/images/cat1.png" alt="cardImg">
+                        <div class="card-body">
+                          <h5 class="card-title">Linux</h5>
+                          <div class="text-center"><a href="./details.html?domain=linux&&subdomain=linux" class="btn btn-primary btn-block">Explore</a></div>
+                        </div>
+                      </div>
+                    </div>
           </li>
-
+          <!-- Cyber Security -->
           <li class="category">
             <button class="link-dark btn-style">CyberSecurity</button>
             <div class="select-option d-flex flex-wrap">
-              <a href="./details.html?domain=CyberSecurity&&subdomain=CyberSecurity">
-                <button
-                  class="btn select-category-btn shadow-none"
-                  value="CyberSecurity"
-                >
-                  <div><img src="./assets/images/cat7.png" /></div>
-                  CyberSecurity
-                </button>
-              </a>
-            </div>
+              <!-- adding card -->
+              <div class="container">
+                <div class="row g-3 mb-5">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                      <img class="card-img-top"  src="./assets/images/cat8.png" alt="cardImg">
+                      <div class="card-body">
+                        <h5 class="card-title">CyberSecurity</h5>
+                        <div class="text-center"><a href="./details.html?domain=CyberSecurity&&subdomain=CyberSecurity" class="btn btn-primary btn-block">Explore</a></div>
+                      </div>
+                    </div>
+                  </div>
           </li>
         </ul>
         <hr class="catHr" />

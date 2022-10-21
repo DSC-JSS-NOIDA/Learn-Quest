@@ -28,6 +28,11 @@
         "title": "Striver SDE sheet",
         "link": "https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/",
         "type": "docs"
+    },
+    {
+         "title": "Codeforces Blog for Beginers",
+        "link": "https://medium.com/nybles/beginners-guide-to-competitive-programming-60300af1ee92",
+        "type": "docs"
     }
 
 ]
